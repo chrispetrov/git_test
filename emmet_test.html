@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <style>
+        html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Table template</h1>
+    <table>
+        <colgroup>
+            <col span="4">
+            <col style="border: 2px solid black">
+        </colgroup>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+        <thead>
+            <th colspan="4">&nbsp</th>
+            <th style="border: 1px solid black;">Name</th>
+            <th>Mass (10<sup>24</sup>kg)</th>
+            <th>Diameter (km)</th>
+            <th>Density (kg/m<sup>3</sup>)</th>
+            <th>Gravity (m/s<sup>2</sup>)</th>
+            <th>Length of day (hours)</th>
+            <th>Distance from Sun (10<sup>6</sup>km)</th>
+            <th>Mean temperature (°C)</th>
+            <th>Number of moons</th>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="5" colspan="4">Terrestrial planets</td>
+                <tr>
+                    <td>Mercury</td>
+                    <td>0.330</td>
+                    <td>4,879</td>
+                    <td>5427</td>
+                    <td>3.7</td>
+                    <td>4222</td>
+                
+                    <td>57.9</td>
+                    <td>167</td>
+                    <td>0</td>
+                    <td>Closest to the Sun</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>5.97</td>
+                    <td>12,756</td>
+                    <td>5514</td>
+                    <td>9.8</td>
+                    <td>24.0</td>
+                
+                    <td>57.9</td>
+                    <td>149.6</td>
+                    <td>0</td>
+                    <td>Our world</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>5.97</td>
+                    <td>12,756</td>
+                    <td>5514</td>
+                    <td>9.8</td>
+                    <td>24.0</td>
+                
+                    <td>57.9</td>
+                    <td>149.6</td>
+                    <td>0</td>
+                    <td>MarsBars</td>
+                </tr>
+                <tr>
+                    <td>Martinso</td>
+                    <td>5.97</td>
+                    <td>12,756</td>
+                    <td>5514</td>
+                    <td>9.8</td>
+                    <td>24.0</td>
+                
+                    <td>57.9</td>
+                    <td>149.6</td>
+                    <td>0</td>
+                    <td>Martin's world</td>
+                </tr>
+            </tr>
+            <tr>
+                <tr>
+                    <th colspan="2" rowspan="4">Jovian Planets</th>
+                    <th colspan="2" rowspan="1">Gas Giants</th>
+                    <td>Mercury</td>
+                    <td>0.330</td>
+                    <td>4,879</td>
+                    <td>5427</td>
+                    <td>3.7</td>
+                    <td>4222</td>
+                
+                    <td>57.9</td>
+                    <td>167</td>
+                    <td>0</td>
+                    <td>Closest to the Sun</td>
+                </tr>
+                <tr>
+                    <th colspan="2" rowspan="1">Ice Giants</th>
+                    <td>Mercury</td>
+                    <td>0.330</td>
+                    <td>4,879</td>
+                    <td>5427</td>
+                    <td>3.7</td>
+                    <td>4222</td>
+                
+                    <td>57.9</td>
+                    <td>167</td>
+                    <td>0</td>
+                    <td>Closest to the Sun</td>
+                </tr>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="4" colspan="4">Dwarf Planets</th>
+                <td>Pluto</td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>Pluto is actually a Planet :)</td>
+            </tr>
+        </tfoot>
+    </table>
+
+  </body>
+</html>
