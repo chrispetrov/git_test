@@ -1,0 +1,54 @@
+
+public class Kiselina
+{
+    public static int S=0;
+    
+    public static int H=0;
+    
+    public static int O=0;
+    
+	public static void main(String[] args) {
+		Thread S=new ThreadS();
+		Thread H=new ThreadH();
+		Thread O=new ThreadO();
+		S.start();
+		H.start();
+		O.start();
+	}
+	static void bond(){
+	    System.out.println("Sozdadena e sulfurna kiselina");
+	}
+}
+class ThreadS extends Thread{
+    public void run(){
+        if(Kiselina.S==0){
+            Kiselina.S+=1;
+        }
+        if(Kiselina.S==1 && Kiselina.H==2 && Kiselina.O=4){
+            bond();
+        }
+    }
+    
+}
+class ThreadH extends Thread{
+    public void run(){
+        if(Kiselina.H<2){
+            Kiselina.H+=1;
+        }
+        if(Kiselina.S==1 && Kiselina.H==2 && Kiselina.O=4){
+            bond();
+        }
+    }
+    
+}
+class ThreadO extends Thread{
+    public void run(){
+        if(Kiselina.O<4){
+            Kiselina.O+=1;
+        }
+        if(Kiselina.S==1 && Kiselina.H==2 && Kiselina.O=4){
+            bond();
+        }
+    }
+    
+}
